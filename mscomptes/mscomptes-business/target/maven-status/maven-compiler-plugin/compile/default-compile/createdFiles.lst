@@ -1,0 +1,6 @@
+com\project\mscomptes\business\AbstractDatabaseService.class
+com\project\mscomptes\business\AssetService.class
+com\project\mscomptes\business\DatabaseService.class
+com\project\mscomptes\business\api\ApiServiceImpl.class
+com\project\mscomptes\business\api\ApiService.class
+com\project\mscomptes\business\AsssetServiceImpl.class

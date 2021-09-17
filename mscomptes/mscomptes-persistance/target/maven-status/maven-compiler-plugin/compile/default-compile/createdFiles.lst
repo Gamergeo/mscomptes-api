@@ -1,0 +1,4 @@
+com\project\mscomptes\persistance\AssetDao.class
+com\project\mscomptes\persistance\IDao.class
+com\project\mscomptes\persistance\AbstractDAO.class
+com\project\mscomptes\persistance\AssetDaoImpl.class

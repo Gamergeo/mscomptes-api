@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="mscomptes">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="mscomptes-business-0.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mscomptes-business/mscomptes-business">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mscomptes-persistance-0.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mscomptes-persistance/mscomptes-persistance">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mscomptes-model-0.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mscomptes-model/mscomptes-model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mscomptes-technical-0.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mscomptes-technical/mscomptes-technical">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="util-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/util/util">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ajax-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ajax/ajax">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="navigation-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/navigation/navigation">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="accordeonMenu-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/accordeonMenu/accordeonMenu">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="datatable-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/datatable/datatable">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="form-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/form/form">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="filterList-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/filterList/filterList">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="collapsable-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/collapsable/collapsable">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/mscomptes-webapp/target/classes"/>
+        <property name="context-root" value="mscomptes"/>
+    </wb-module>
+</project-modules>
