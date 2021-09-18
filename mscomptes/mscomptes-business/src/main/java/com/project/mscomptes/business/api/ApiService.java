@@ -4,14 +4,15 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.List;
 
+import org.apache.http.NameValuePair;
 import org.springframework.stereotype.Service;
-
-import com.project.mscomptes.model.Asset;
-import com.project.mscomptes.model.OHLC;
 
 @Service
 public interface ApiService {
 
-	List<OHLC> call(Asset asset) throws URISyntaxException, IOException;
+	String call(String uri, List<NameValuePair> parameters) throws URISyntaxException, IOException;
+
+	String call(String uri, List<NameValuePair> parameters, String apiKeyHeaderName, String apiKey)
+			throws URISyntaxException, IOException;
 
 }

@@ -21,20 +21,40 @@
 			
 		
 		</script>
+		
+		<link href="<c:url value='/css/main.css' />" rel="stylesheet" media="all" type="text/css">
 	</head>
 	
 	<body>	
-		<div id="assetList">
 		
-			<span>Listes des assets : <br/></span>
-			<span>
-				<c:forEach items="${assetList}" var="asset">
-					${asset.name}
-				</c:forEach>
-			</span>
+		<div id="button">
+			<button onclick="generateCsv()">Generer csv</button>
 		</div>
 		
-		<button onclick="generateCsv()">Generer csv</button>
-
+		<div id="cryptoAsset">
+			<span class="title">Cryptos gérées : </span>
+			<c:forEach items="${cryptoList}" var="asset">
+				<span>${asset.name} (${asset.isin})</span>
+			</c:forEach>
+		</div>
+		
+		<div id="stockAsset">
+			<span class="title">Stock gérés : </span>
+			<c:forEach items="${stockList}" var="asset">
+				<span>${asset.name} (${asset.isin})</span>
+			</c:forEach>
+		</div>
+		
+		<div id="nonManagedAsset">
+			<span class="title">Non gérés : </span>
+			<c:forEach items="${notManagedList}" var="asset">
+				<span>
+					<a href="${asset.link}">
+						${asset.name} (${asset.isin})
+					</a>
+				</span>
+			</c:forEach>
+		</div>
+	
 	</body>
 </html>
